@@ -1,0 +1,13 @@
+.l-footer {
+  background: $font-color-brand-dark;
+  border-top: 1px solid $font-color-brand;
+
+  &__copyright {
+    margin: 0;
+
+    color: #454c65;
+    font-size: rem(14px);
+    line-height: 38px;
+    text-align: right;
+  }
+}

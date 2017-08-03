@@ -1,0 +1,63 @@
+.navbar {
+  height: 78px;
+
+  flex-direction: initial;
+  align-items: center;
+  position: static;
+  padding: 0;
+
+  .navbar &__collapse {
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      text-align: center;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      width: auto;
+      margin-left: auto;
+    }
+
+    @include media-breakpoint-down(md) {
+      position: absolute;
+      top: 100%;
+      left: 0px;
+
+      background: $font-color-brand;
+      border-top: 1px solid #fff;      
+    }
+  }
+
+  &__brand {
+    @include media-breakpoint-down(md) {
+      width: 120px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      left: 27%;
+      top: 23px;
+      margin-left: -208px;
+    }
+  }  
+
+  &__brand-img {
+    width: 100%;
+  }
+
+  &__toggle-ico {
+    width: 2em;
+    height: 2em;
+
+    background: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>") ;
+  }
+
+  &__toggle-btn {
+    align-self: auto;    
+    margin-left: auto;
+    
+    border: 1px solid #fff;
+    background: none;
+    border-radius: 4px;    
+  }
+}

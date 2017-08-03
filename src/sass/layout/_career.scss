@@ -1,0 +1,103 @@
+.career {
+  background: $font-color-brand-dark;
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: em(40px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    background: linear-gradient(to right, $font-color-brand-dark 50%, #fff 50%);
+  }
+
+  &__container {
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+    }
+  }
+
+  &__col {
+    padding-top: em(40px);
+
+    background: $font-color-brand-dark;
+
+    @include media-breakpoint-down(lg) {
+      flex: 0 0 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: 62.444%;
+      height: em(540px);
+    }
+  }
+
+  &__text-wrap {
+    margin: em(50px) 0;
+    color: #fff;
+
+    @include media-breakpoint-up(lg) {
+      width: em(310px);
+      margin-top: em(140px);
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+
+    color: $font-color-brand;
+  }
+
+  &__text {
+    margin-top: em(35px);
+
+    p {
+      font-size: rem(17px);
+    }
+  }
+
+  &__banner {
+    background: url('../img/career.jpg') center center/cover;
+
+    @include media-breakpoint-down(lg) {
+        padding: em(90px) 15px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 72.728%;
+      height: 0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding-bottom: 41.149%;
+    }
+  }
+
+  &__banner-text-wrap {
+    color: #fff;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      left: em(70px);
+      bottom: em(70px);
+    }
+  }
+
+  &__banner-text {
+    margin-top: em(30px);
+
+    p {
+      font-size: rem(19px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }    
+    }
+  }
+
+  &__banner-title {
+    margin: 0;
+    font-size: 33px;    
+    font-weight: 700;
+  }
+}

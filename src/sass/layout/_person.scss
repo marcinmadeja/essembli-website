@@ -1,0 +1,91 @@
+.person {
+  &__details-col {
+    position: relative;
+    padding: em(40px) em(35px) 0;
+    background: url('../img/person-bg.jpg') center center/cover;
+
+    color: #fff;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: em(40px);
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-top: em(110px);
+    }
+
+    @include media-breakpoint-down(lg) {
+      flex: 0 0 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: 54.418%;
+    }
+  }
+
+  &__name {
+    position: relative;
+    margin: 0;
+    
+    font-size: rem(25px);
+    font-weight: 700;
+  }
+
+  &__text {
+    line-height: 1.7;
+    margin-top: em(29px);
+
+    @include media-breakpoint-down(lg) {
+      flex: 0 0 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: em(330px);
+    }
+
+    p {
+      font-size: rem(19px);
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      bottom: 20px;
+      right: 50px;
+    }
+
+    &::after {
+      content: '';
+      width: em(25px);
+      height: em(25px);
+      margin-left: em(10px);
+
+      display: inline-block;
+      vertical-align: middle;
+
+      background: url('../img/ico-play.png');
+      background-size: 100% 100%;
+    }
+  }
+
+  &__img-col {
+    padding: 0;
+
+    @include media-breakpoint-down(lg) {
+      flex: 0 0 100%;
+    }
+    
+    @include media-breakpoint-up(lg) {
+      max-width: 45.582%;
+    }    
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

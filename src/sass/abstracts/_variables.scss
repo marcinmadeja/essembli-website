@@ -1,0 +1,29 @@
+$base-font-size: 16px;
+
+$primary-font: 'Ebrima', sans-serif;
+
+$font-color: #333;
+$font-color-light: #fff;
+$font-color-brand: #118ded;
+$font-color-brand-dark: #171f3e;
+$font-color-brand-light: #66ceeb;
+
+$base-url: '' !default;
+
+
+// bootstap settings
+$grid-breakpoints: (
+  xs: 0,
+  sm: 450px,
+  md: 768px,
+  lg: 992px,
+  xl: 1110px
+);
+
+$container-max-widths: (
+  xs: 100%,
+  sm: 100%,  
+  md: 720px,
+  lg: 960px,
+  xl: 1075px
+);

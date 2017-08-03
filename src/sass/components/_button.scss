@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+  @extend %reset-btn;
+  @extend %transition;
+  min-width: em(286px, 21px);
+  padding: em(6px);
+  border-radius: 0;
+  border: 1px solid $font-color-brand-dark;
+
+  color: $font-color-brand-dark;
+  font-size: rem(21px);
+ 
+  &:hover {
+    background: $font-color-brand-dark;
+    color: $font-color-light;
+  }
+}

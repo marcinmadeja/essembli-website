@@ -1,0 +1,31 @@
+.l-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  border-bottom: 1px solid transparent;
+  transition: 0.25s all;
+
+  &--is-fixed {
+    position: fixed;
+    background: $font-color-brand-dark;
+    border-color: #fff;
+  }
+ 
+  @include media-breakpoint-down(lg) {
+    padding: 0 15px;
+  }
+
+  &__container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include media-breakpoint-up(md) {
+      position: static;
+    }
+  }
+}
+    
+    

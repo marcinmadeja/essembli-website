@@ -1,0 +1,52 @@
+.experiance {
+  @include media-breakpoint-down(md) {
+    background: $font-color-brand;
+  }
+
+  @include media-breakpoint-up(md) {
+    background: linear-gradient(to right, #ffffff 50%,$font-color-brand 50%);
+  }
+  
+  &__container {
+    @include media-breakpoint-up(md) {
+      padding-left: em(30px);
+    }
+  }
+
+  &__inner {
+    @include media-breakpoint-down(md) {
+      padding: em(40px) 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      min-height: em(285px);
+      display: flex;
+      align-items: center;
+
+      background: $font-color-brand;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto em(30px);
+
+    @include media-breakpoint-up(md) {
+      margin: 0 em(48px) 0 em(48px);
+    }
+  }
+
+  &__text {
+    margin: 0;
+    
+    color: #fff;
+    font-size: rem(22px);
+    line-height: 1.2;
+    text-align: justify;
+
+    @include media-breakpoint-up(md) {
+      width: 80.2%;
+    }
+  }
+}
+

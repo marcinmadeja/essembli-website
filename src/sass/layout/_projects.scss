@@ -1,0 +1,46 @@
+.projects {
+  background: linear-gradient(to right, $font-color-brand 50%,#ffffff 50%);
+
+  &__container {
+    padding: em(61px) em(60px) em(61px) em(60px);
+
+    align-items: center;
+    background: $font-color-brand;
+
+    @include media-breakpoint-down(sm) {
+      padding: em(30px);
+    }
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      padding-left: 0;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-size: rem(22px);
+    text-align: justify;
+
+    @include media-breakpoint-up(md) {
+      width: 68%;
+      margin-left: auto;
+    }
+
+    strong {
+      font-size: rem(34px, 22px);
+      line-height: 1.4;
+    }
+  }
+
+  &__img-wrap {
+    @include media-breakpoint-down(md) {
+      margin-top: em(30px);
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-left: em(48px);
+    }
+  }
+}

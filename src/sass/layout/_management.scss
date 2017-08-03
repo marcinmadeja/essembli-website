@@ -1,0 +1,53 @@
+.management {
+  margin: em(130px) 0 em(33px);
+
+  &__list {
+    margin: em(85px) 0 0 0;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-right: em(80px);
+      text-align: right;
+    }
+  }
+ 
+  &__item {
+    
+    display: inline-block;
+    vertical-align: top;
+
+    @include media-breakpoint-down(xs) {
+      display: block;
+      margin: 0 auto em(40px);
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: em(144px);
+      margin-left: em(25px);
+
+      text-align: left;
+    }    
+  }
+
+  &__item-title {
+    margin: em(6px, 23px) 0 em(6px, 23px);
+
+    font-size: rem(23px);
+    font-weight: 700;
+    line-height: 1;
+  }
+ 
+  &__img-wrap {
+    height: em(144px);
+    overflow: hidden;
+  }
+
+  &__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
